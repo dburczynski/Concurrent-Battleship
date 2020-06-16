@@ -1,0 +1,41 @@
+
+
+1. Dariusz Burczyñski 253904
+
+Gra w statki.
+
+
+2. 
+
+Klient gry korzysta z pamiêci wspó³dzielonej, której trzymane s¹ zmienne informuj¹ce
+o stanie gry. Wykorzystywany jest zdarzenie czasowe oraz zdarzenie okna Xlib aby
+dzia³aæ kiedy u¿ytkownik coœ kliknie.
+
+3.
+
+Ka¿dy gracz uruchamia sobie program. Na pocz¹tku ka¿dy jednoczeœnie
+ustawia swoje statki (3 statki o dlugosci 3, ale mo¿na zmieniæ iloœæ statków).
+Nastêpnie turowo ka¿dy gracz próbuje trafiæ statek przeciwnika. Jeœli trafi to
+strzela jeszcze raz, jeœli pud³o to koniec tury. Wygrywa gracz który zatopi³ wszystkie
+statki przeciwnika.
+
+3.
+
+- wy³¹czenie programu poprzez ctl+c lub zamkniêcie okna: wygrywa gracz który zosta³ w grze
+
+- limit graj¹cych: ustawiony jest na dwie osoby i klient trzeciej osoby nie "wchodzi" do gry
+
+- tury: gra jest podzielona na tury tzn nie wykonuje siê ruchów jeœli nie jest twoja kolej
+
+-uk³adanie statków trzy czeœciowych: statki nie musz¹ byæ k³adzione w kolejnoœci po³o¿enia
+np. 1 2 3 gdzie cyfry oznaczaj¹ kolejnoœæ po³o¿enia.
+Mo¿e byæ np. najpierw 1 2 a nastepnie dajemy 3 przed 1 czyli 3 1 2.
+
+-b³êdy Xlib: brak po³¹czenia do serwer X albo kiedy display jest nullem.
+
+-strza³y strzelane w miejsca ju¿ strzelone: gracz traci kolejke
+
+-rozmieszczanie ³odzi na w³asnej po³ówce: brak mo¿liwoœci ustawiania statków na drugiej planszy
+
+-brak strza³ow na w³asnej plaszy: nie mo¿na strzelaæ w w³asne statki, jeœli ktoœ strzeli to wychodzi 
+komunikat
